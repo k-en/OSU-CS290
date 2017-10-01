@@ -1,1 +1,1 @@
-# OSU-CS290
+# Repo for OSU CS290
