@@ -4,8 +4,7 @@
   "description": "Kenny Ngo's personal website for professional development.",
   "main": "workouts.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "./node_modules/.bin/forever -m 5 workouts.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ken Ngo",
   "license": "ISC",
