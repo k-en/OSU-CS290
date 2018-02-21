@@ -1,0 +1,57 @@
+<div class="container">
+  <h1>editing entry</h1>
+  <form action="/updated">
+    <input type="hidden" name="id" value={{results.id}}>
+    <div class="row">
+      <div class="form-group col-xs-6">
+        <label class="col-form-label" for="formGroupExampleInput">exercise name:</label>
+        <input type="text" class="form-control" id="name" name="name" value="{{results.name}}">
+      </div>
+      <div class="form-group col-xs-6">
+        <label class="col-form-label" for="formGroupExampleInput">date:</label>
+        <input type="date" class="form-control" id="date" name="date" value="{{results.date}}">
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group col-xs-3">
+        <label class="col-form-label" for="formGroupExampleInput">reps:</label>
+        <input type="number" class="form-control" id="reps" name="reps" value="{{results.reps}}" min="1">
+      </div>
+      <div class="form-group col-xs-3">
+        <label class="col-form-label" for="formGroupExampleInput">weight:</label>
+        <input type="number" class="form-control" id="weight" name="weight" value="{{results.weight}}" min="1">
+      </div>
+      <fieldset class="form-group col-xs-6">
+        <label class="col-form-label" for="formGroupExampleInput">unit:</label>
+        {{#if results.lbs}}
+        <div class="form-check">
+          <label class="form-check-label col-xs-6">
+            <input type="radio" class="form-check-input" id="lbs" name="lbs" value="1" checked>  lbs
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label col-xs-6">
+            <input type="radio" class="form-check-input" id="lbs" name="lbs" value="0">  kgs
+          </label>
+        </div>
+        {{else}}
+        <div class="form-check">
+          <label class="form-check-label col-xs-6">
+            <input type="radio" class="form-check-input" id="lbs" name="lbs" value="1">  lbs
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label col-xs-6">
+            <input type="radio" class="form-check-input" id="lbs" name="lbs" value="0" checked>  kgs
+          </label>
+        </div>
+        {{/if}}
+      </fieldset>
+    </div>
+    <div class="row">
+      <div class="col-xs-6">
+        <button type="submit" class="btn btn-primary" id="update" name="update" value="update">update</button>
+      </div>
+    </div>
+  </form>
+</div>
