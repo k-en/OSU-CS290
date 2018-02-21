@@ -1,1 +1,1 @@
-# Repo for OSU CS290
+# workout log created for cs290

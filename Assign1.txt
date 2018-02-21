@@ -1,2 +1,0 @@
-http://flip2.engr.oregonstate.edu:9356/
-https://github.com/k-en/OSU-CS290/
